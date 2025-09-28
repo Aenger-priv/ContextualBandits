@@ -1,0 +1,65 @@
+# General
+.DS_Store
+*.log
+logs/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.*
+.python-version
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+.wheelhouse/
+
+# Test & coverage
+.tox/
+.nox/
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+*.py,cover
+nosetests.xml
+
+# Type checker / linters
+.mypy_cache/
+dmypy.json
+.dmypy.json
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
+.project
+.pydevproject
+
+# Hatch / tooling
+.hatch/
+
+# Notes:
+# - Do NOT blanket-ignore data files (e.g., *.json, *.csv) because the repo contains
+#   tracked artifacts like fx_trading_dataset.json and volatility_series.csv.
