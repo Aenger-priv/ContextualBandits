@@ -48,13 +48,6 @@ Quick Start
   - `uv run mypy`
   - Without installing globally: `uvx black .`, `uvx ruff check .`, `uvx mypy`
 
-- Alternative (pip):
-
- - Create and activate a virtual environment, then install dependencies:
-
-  - `python -m venv .venv`
-  - `source .venv/bin/activate` (Linux/Mac) or `.\.venv\\Scripts\\activate` (Windows)
-  - `pip install -r requirements.txt`
 
 2) Use the included dataset
 
