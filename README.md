@@ -34,8 +34,23 @@ Quick Start
 
 1) Environment
 
-- Python 3.10+ recommended (notebook kernel shows 3.12.2).
-- Create and activate a virtual environment, then install dependencies:
+- Python 3.11+ (notebooks were tested on 3.12 as well). The project declares `requires-python = ">=3.11"` in `pyproject.toml`.
+
+- Using uv (recommended):
+
+  - `uv venv`  (creates `.venv` with your current Python; use `uv venv 3.11` to target 3.11 explicitly)
+  - `source .venv/bin/activate` (macOS/Linux) or `.\\.venv\\Scripts\\activate` (Windows)
+  - `uv sync`  (installs dependencies; dev tools like Black/Ruff/MyPy are included by default)
+
+  Common tools:
+  - `uv run black .`
+  - `uv run ruff check .`
+  - `uv run mypy`
+  - Without installing globally: `uvx black .`, `uvx ruff check .`, `uvx mypy`
+
+- Alternative (pip):
+
+ - Create and activate a virtual environment, then install dependencies:
 
   - `python -m venv .venv`
   - `source .venv/bin/activate` (Linux/Mac) or `.\.venv\\Scripts\\activate` (Windows)
@@ -112,4 +127,3 @@ Troubleshooting
 Citation
 
 - If you reference this work academically, please cite your accompanying dissertation or report. The codebase is intended for research and educational purposes and is not financial advice.
-
