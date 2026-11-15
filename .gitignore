@@ -1,65 +1,26 @@
-# General
-.DS_Store
-*.log
-logs/
-
-# Python bytecode and caches
+# Generated local experiment data and environments
+.venv*/
 __pycache__/
 *.py[cod]
-*$py.class
+.ipynb_checkpoints/
 .cache/
-
-# Virtual environments
-.venv/
-venv/
-ENV/
-env/
-.env
-.env.*
-.python-version
-
-# Packaging / build
+.DS_Store
+runs/
+datasets/
+results/
+explorations/
 build/
 dist/
 *.egg-info/
-.eggs/
-*.egg
-pip-wheel-metadata/
-.wheelhouse/
-
-# Test & coverage
-.tox/
-.nox/
-.pytest_cache/
-htmlcov/
-.coverage
-.coverage.*
-coverage.xml
-*.cover
-*.py,cover
-nosetests.xml
-
-# Type checker / linters
-.mypy_cache/
-dmypy.json
-.dmypy.json
-.ruff_cache/
-
-# Jupyter
-.ipynb_checkpoints/
-.jupyter/
-
-# Editors / IDEs
-.vscode/
-.idea/
-*.swp
-*~
-.project
-.pydevproject
-
-# Hatch / tooling
-.hatch/
-
-# Notes:
-# - Do NOT blanket-ignore data files (e.g., *.json, *.csv) because the repo contains
-#   tracked artifacts like fx_trading_dataset.json and volatility_series.csv.
+.env
+.env.*
+# Private writing and archives never belong in this code repository.
+research/
+private/
+*.docx
+*.doc
+*.pdf
+*.zip
+*.pptx
+*IRP*
+*manuscript*

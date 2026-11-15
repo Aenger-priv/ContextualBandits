@@ -1,0 +1,58 @@
+{
+  "configs": {
+    "uniform": {},
+    "fixed": {},
+    "context_free": {
+      "epsilon": 0.02
+    },
+    "greedy": {},
+    "epsilon": {
+      "epsilon": 0.02
+    },
+    "ucb": {
+      "alpha": 0.5
+    },
+    "sw_ucb": {
+      "alpha": 0.5,
+      "window": 600
+    },
+    "discount_ucb": {
+      "alpha": 0.5,
+      "gamma": 0.999
+    },
+    "ts": {
+      "v": 0.025
+    },
+    "softmax": {
+      "tau": 0.03
+    },
+    "sw_softmax": {
+      "tau": 0.03,
+      "window": 300
+    },
+    "dr_softmax": {
+      "tau": 0.03
+    },
+    "sw_dr_softmax": {
+      "tau": 0.03,
+      "window": 300
+    },
+    "full_information": {}
+  },
+  "fixed": {
+    "stationary": 2,
+    "abrupt_low": 3,
+    "abrupt_high": 3,
+    "drift": 3,
+    "recurring": 2,
+    "nonlinear": 0,
+    "near_tie": 2,
+    "no_context": 1,
+    "imbalanced": 2,
+    "stress": 2,
+    "birth_strong": 2,
+    "birth_inferior": 2,
+    "birth_tie": 2,
+    "birth_contextual": 2
+  }
+}
